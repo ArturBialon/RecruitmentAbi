@@ -1,0 +1,182 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": ".NET"
+    },
+    {
+      "id": 2,
+      "name": "Design"
+    },
+    {
+      "id": 3,
+      "name": "Marketing"
+    },
+    {
+      "id": 4,
+      "name": "Sales"
+    },
+    {
+      "id": 5,
+      "name": "HR"
+    },
+    {
+      "id": 6,
+      "name": "Support"
+    }
+  ],
+  "vacationPackages": [
+    {
+      "id": 1,
+      "name": "Standard",
+      "grantedDays": 20,
+      "year": 2019
+    },
+    {
+      "id": 2,
+      "name": "Senior",
+      "grantedDays": 25,
+      "year": 2019
+    },
+    {
+      "id": 3,
+      "name": "Executive",
+      "grantedDays": 30,
+      "year": 2019
+    },
+    {
+      "id": 4,
+      "name": "Contractor Limited",
+      "grantedDays": 10,
+      "year": 2019
+    },
+    {
+      "id": 5,
+      "name": "Part-Time",
+      "grantedDays": 12,
+      "year": 2019
+    },
+    {
+      "id": 6,
+      "name": "Intern",
+      "grantedDays": 5,
+      "year": 2019
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Carter",
+      "teamId": 1,
+      "vacationPackageId": 1
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "teamId": 1,
+      "vacationPackageId": 2
+    },
+    {
+      "id": 3,
+      "name": "Clara Jensen",
+      "teamId": 2,
+      "vacationPackageId": 1
+    },
+    {
+      "id": 4,
+      "name": "Daniel Lee",
+      "teamId": 3,
+      "vacationPackageId": 3
+    },
+    {
+      "id": 5,
+      "name": "Evelyn Ross",
+      "teamId": 4,
+      "vacationPackageId": 2
+    },
+    {
+      "id": 6,
+      "name": "Frank Morton",
+      "teamId": 1,
+      "vacationPackageId": 5
+    },
+    {
+      "id": 7,
+      "name": "Georgia Patel",
+      "teamId": 5,
+      "vacationPackageId": 1
+    },
+    {
+      "id": 8,
+      "name": "Hector Diaz",
+      "teamId": 2,
+      "vacationPackageId": 6
+    }
+  ],
+  "vacations": [
+    {
+      "id": 1,
+      "dateSince": "2019-11-10T00:00:00",
+      "dateUntil": "2019-11-27T00:00:00",
+      "numberOfHours": 100,
+      "isPartialVacation": false,
+      "empId": 1
+    },
+    {
+      "id": 2,
+      "dateSince": "2019-03-03T00:00:00",
+      "dateUntil": "2019-03-04T00:00:00",
+      "numberOfHours": 16,
+      "isPartialVacation": true,
+      "empId": 2
+    },
+    {
+      "id": 3,
+      "dateSince": "2019-04-12T00:00:00",
+      "dateUntil": "2019-04-29T00:00:00",
+      "numberOfHours": 56,
+      "isPartialVacation": false,
+      "empId": 1
+    },
+    {
+      "id": 4,
+      "dateSince": "2019-05-05T00:00:00",
+      "dateUntil": "2019-05-07T00:00:00",
+      "numberOfHours": 24,
+      "isPartialVacation": false,
+      "empId": 4
+    },
+    {
+      "id": 5,
+      "dateSince": "2019-06-01T00:00:00",
+      "dateUntil": "2019-06-12T00:00:00",
+      "numberOfHours": 8,
+      "isPartialVacation": false,
+      "empId": 5
+    },
+    {
+      "id": 6,
+      "dateSince": "2019-07-20T00:00:00",
+      "dateUntil": "2019-07-24T00:00:00",
+      "numberOfHours": 32,
+      "isPartialVacation": false,
+      "empId": 6
+    },
+    {
+      "id": 7,
+      "dateSince": "2019-11-12T00:00:00",
+      "dateUntil": "2019-11-19T00:00:00",
+      "numberOfHours": 40,
+      "isPartialVacation": false,
+      "empId": 7
+    },
+    {
+      "id": 8,
+      "dateSince": "2019-11-15T00:00:00",
+      "dateUntil": "2019-11-25T00:00:00",
+      "numberOfHours": 80,
+      "isPartialVacation": false,
+      "empId": 8
+    }
+  ]
+}
