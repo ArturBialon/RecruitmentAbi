@@ -19,9 +19,11 @@ namespace RecruitmentAbi.Services
             var empList = _context.Employees
                 .Where(emp => emp.Team.Name == teamName &&
                               emp.Vacations.Any(v =>
-                                  v.DateSince.Year == currentYear ||
-                                  v.DateUntil.Year == currentYear ||
-                                  (v.DateSince.Year < currentYear && v.DateUntil.Year > currentYear)))
+                                  (v.DateSince.Year == currentYear && v.DateUntil.Year == currentYear) ||
+                                  (v.DateSince.Year < currentYear && v.DateUntil.Year == currentYear) ||
+                                  (v.DateSince.Year == currentYear && v.DateUntil.Year <= currentYear)
+                              )
+                       )
                 .ToList();
 
             return empList;
@@ -40,7 +42,7 @@ namespace RecruitmentAbi.Services
                     .Where(v => v.DateSince.Year <= currentYear && v.DateUntil.Year == currentYear)
                     .Select(v => new
                     {
-                        Start = v.DateSince < yearStart ? yearStart : v.DateSince,
+                        Start = v.DateSince < yearStart ? yearStart : v.DateSince > today ? today.AddDays(1) : v.DateSince,
                         End = v.DateUntil > today ? today : v.DateUntil
                     })
                     .Sum(x => (int)x.End.Subtract(x.Start).TotalDays + 1)
